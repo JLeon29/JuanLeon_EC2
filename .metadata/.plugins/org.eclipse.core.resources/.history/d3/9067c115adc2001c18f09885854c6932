@@ -1,0 +1,9 @@
+package com.jleon.bodega.model;
+
+import java.io.Serializable;
+
+public class Productos implements Serializable{
+	
+	private String idProducto;
+
+}

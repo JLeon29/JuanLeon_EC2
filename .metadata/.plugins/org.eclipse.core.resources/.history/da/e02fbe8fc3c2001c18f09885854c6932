@@ -1,0 +1,52 @@
+package com.jleon.bodega.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jleon.bodega.model.dto.BodegaRequestDto;
+import com.jleon.bodega.model.dto.BodegaResponseDto;
+import com.jleon.bodega.repository.BodegaRepository;
+import com.jleon.bodega.service.IBodegaService;
+
+@Service
+public class BodegaServiceImpl implements IBodegaService{
+	
+	
+	@Autowired
+	private BodegaRepository bodegaRepository;
+
+	@Override
+	public void guardarBodega(BodegaRequestDto bodegaRequestDto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminarBodega(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editarBodega(BodegaRequestDto bodegaRequestDto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<BodegaResponseDto> listarBodega() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BodegaResponseDto bodegaById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

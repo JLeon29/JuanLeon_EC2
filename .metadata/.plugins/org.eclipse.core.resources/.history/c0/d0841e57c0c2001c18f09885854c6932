@@ -1,0 +1,11 @@
+package com.jleon.bodega.model.dto;
+
+public class ProductoResponseDto {
+	
+	private Integer idProductoResponse;
+	private String productoResponse;
+	private String descripcionResponse;
+	private Double precioResponse;
+	private Integer stockResponse;
+
+}

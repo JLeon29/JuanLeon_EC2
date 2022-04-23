@@ -1,0 +1,12 @@
+package com.jleon.bodega.service;
+
+public interface IClienteService {
+	
+	void guardarCliente(ClienteRequestDTO p);
+	void eliminarCliente(Integer id);
+	void editarCliente(ClienteRequestDTO p);
+	List<ClienteResponseDTO> listarCliente();
+	ClienteResponseDTO clienteById(Integer id);
+	
+
+}

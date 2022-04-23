@@ -1,0 +1,16 @@
+package com.jleon.bodega.service;
+
+import java.util.List;
+
+import com.jleon.bodega.model.dto.BodegaRequestDto;
+
+
+public class IBodega {
+	
+	public void guardarBodega(BodegaRequestDto bodegaDto);
+	void eliminarCliente(Integer id);
+	void editarCliente(ClienteRequestDto bodegaDto);
+	List<ClienteResponseDto> listarCliente();
+	ClienteResponseDto clienteById(Integer id);
+
+}

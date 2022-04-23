@@ -1,0 +1,61 @@
+package com.jleon.bodega.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jleon.bodega.model.Cliente;
+import com.jleon.bodega.model.Producto;
+import com.jleon.bodega.model.dto.ProductoRequestDto;
+import com.jleon.bodega.model.dto.ProductoResponseDto;
+import com.jleon.bodega.repository.ProductoRepository;
+import com.jleon.bodega.service.IProductoService;
+
+@Service
+public class ProductoServiceImpl implements IProductoService{
+	
+	@Autowired
+	private ProductoRepository productoRepository;
+
+	@Override
+	public void guardarProducto(ProductoRequestDto productoDto) {
+		
+		Producto producto = new Producto();
+
+		producto.setIdProducto(null);
+		producto.setNombre(clienteDto.getNombre());
+		producto.setDni(clienteDto.getDni());
+		producto.setDirección(clienteDto.getDirección());
+
+		clienteRepository.save(cliente);
+		
+	}
+
+	@Override
+	public void eliminarProducto(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editarProducto(ProductoRequestDto prodcutoDto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<ProductoResponseDto> listarProducto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ProductoResponseDto ProductoById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+
+}

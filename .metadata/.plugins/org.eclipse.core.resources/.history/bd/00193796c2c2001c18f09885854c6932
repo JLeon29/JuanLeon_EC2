@@ -1,0 +1,5 @@
+package com.jleon.bodega.service;
+
+public class IBodega {
+
+}

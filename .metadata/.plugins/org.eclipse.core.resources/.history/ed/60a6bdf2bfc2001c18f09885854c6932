@@ -1,0 +1,49 @@
+package com.jleon.bodega.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.jleon.bodega.model.dto.ProductoRequestDto;
+import com.jleon.bodega.model.dto.ProductoResponseDto;
+import com.jleon.bodega.service.IProductoService;
+
+@Service
+public class ProductoServiceImpl implements IProductoService{
+	
+	
+	private 
+
+	@Override
+	public void guardarProducto(ProductoRequestDto prodcutoDto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminarProducto(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editarProducto(ProductoRequestDto prodcutoDto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<ProductoResponseDto> listarProducto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ProductoResponseDto ProductoById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+
+}

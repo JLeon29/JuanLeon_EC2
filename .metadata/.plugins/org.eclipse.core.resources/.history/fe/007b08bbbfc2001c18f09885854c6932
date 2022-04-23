@@ -1,0 +1,19 @@
+package com.jleon.bodega.service;
+
+import java.util.List;
+
+import com.jleon.bodega.model.dto.ClienteRequestDto;
+import com.jleon.bodega.model.dto.ClienteResponseDto;
+import com.jleon.bodega.model.dto.ProductoRequestDto;
+import com.jleon.bodega.model.dto.ProductoResponseDto;
+
+public interface IProducto {
+	
+	void guardarProducto(ProductoRequestDto prodcutoDto);
+	void eliminarProducto(Integer id);
+	void editarProducto(ProductoRequestDto prodcutoDto);
+	List<ProductoResponseDto> listarProducto();
+	ProductoResponseDto ProductoById(Integer id);
+	
+
+}

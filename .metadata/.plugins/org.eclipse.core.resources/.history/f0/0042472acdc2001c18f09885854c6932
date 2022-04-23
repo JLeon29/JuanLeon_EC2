@@ -1,0 +1,19 @@
+package com.jleon.bodega.security;
+
+import java.io.Serializable;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+
+import io.jsonwebtoken.Claims;
+
+@Component
+public class JWTTokenUtil implements Serializable {
+
+	private static final long serialVersionUID = -1558920761827378001L;
+
+}

@@ -1,0 +1,5 @@
+package com.jleon.bodega.model;
+
+public class Usuario {
+
+}

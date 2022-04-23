@@ -1,0 +1,5 @@
+package com.jleon.bodega.repository;
+
+public interface UsuarioRepository {
+
+}

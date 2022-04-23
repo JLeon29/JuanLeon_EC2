@@ -1,0 +1,3 @@
+insert into usuario (usuario,password,rol ) values ('juan','123','ROLE_ADMIN')
+insert into usuario (usuario,password,rol ) values ('profesor','123','ROLE_USER')
+insert into cliente (nombre, direccion, dni) values ('Armando Paredes Casas Rejas', 'Lima-Perú', '52620123')

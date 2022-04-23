@@ -1,0 +1,12 @@
+package com.jleon.bodega.security;
+
+import java.io.Serializable;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class JWTTokenUtil implements Serializable {
+
+	private static final long serialVersionUID = -1558920761827378001L;
+
+}

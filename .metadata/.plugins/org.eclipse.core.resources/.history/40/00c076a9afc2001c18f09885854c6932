@@ -1,0 +1,43 @@
+package com.jleon.bodega.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jleon.bodega.model.dto.ClienteRequestDto;
+import com.jleon.bodega.model.dto.ClienteResponseDto;
+import com.jleon.bodega.repository.ClienteRepository;
+import com.jleon.bodega.service.IClienteService;
+@Service
+public class ClienteServiceImpl implements IClienteService {
+	
+	@Autowired
+	private ClienteRepository clienteRepository;
+
+	@Override
+	public void guardarCliente(ClienteRequestDto clienteDto) {
+		clienteRepository.save(null)
+	}
+
+	@Override
+	public void eliminarCliente(Integer id) {
+		
+	}
+
+	@Override
+	public void editarCliente(ClienteRequestDto clienteDto) {
+		
+	}
+
+	@Override
+	public List<ClienteResponseDto> listarCliente() {
+		return null;
+	}
+
+	@Override
+	public ClienteResponseDto clienteById(Integer id) {
+		return null;
+	}
+
+}

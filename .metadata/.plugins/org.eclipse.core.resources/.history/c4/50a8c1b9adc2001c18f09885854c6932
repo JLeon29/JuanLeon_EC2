@@ -1,0 +1,36 @@
+package com.jleon.bodega.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Table(name = "producto")
+@Entity
+@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Producto implements Serializable{
+	
+	private static final long serialVersionUID = -6875535997440898462L;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String idProducto;
+	private String producto;
+	private String descripcion;
+	private Double precio;
+	private Integer stock;
+
+}

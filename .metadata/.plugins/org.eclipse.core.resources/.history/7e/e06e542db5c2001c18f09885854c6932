@@ -1,0 +1,1 @@
+insert into cliente (idCliente,direccion,dni,nombre ) values (1,'Lima-Peru', '71210842','Juan León')

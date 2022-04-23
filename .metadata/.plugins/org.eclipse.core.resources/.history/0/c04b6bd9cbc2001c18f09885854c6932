@@ -1,0 +1,5 @@
+package com.jleon.bodega.security;
+
+public class JWTEntryPoint {
+
+}

@@ -1,0 +1,6 @@
+package com.jleon.bodega.security;
+
+public class JWTUserDetailsService {
+	
+
+}

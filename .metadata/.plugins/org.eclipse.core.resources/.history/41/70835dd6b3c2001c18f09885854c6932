@@ -1,0 +1,1 @@
+insert into usuarios (usuario,contrasenia,rol ) values ('juan','123','ROLE_ADMIN')

@@ -1,0 +1,47 @@
+package com.jleon.bodega.security;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.tomcat.jni.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import com.jleon.bodega.model.Usuario;
+import com.jleon.bodega.repository.UsuarioRepository;
+
+public class JWTUserDetailsService implements UserDetailsService {
+	
+	@Autowired
+	private UsuarioRepository repository;
+
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+
+		Usuario usuario = repository.findByUsuario(username);
+		if(usuario != null) {
+			
+			//GrantedAuthority permite que se almacenará roles para un usuario
+			List<GrantedAuthority> granted = new ArrayList<GrantedAuthority>();
+			//Transformamos el rol a tipo GrantedAuthority
+			GrantedAuthority authority = new SimpleGrantedAuthority(usuario.getRol());
+			//Agreamos a la lista
+			granted.add(authority);
+			
+			return new User(usuario.getUsuario(), new BCryptPasswordEncoder().encode(usuario.getContrasenia()), granted);
+			
+		}else {
+			throw new UsernameNotFoundException("El usuario no existe");
+		}
+		
+		
+	}
+	
+	
+
+}

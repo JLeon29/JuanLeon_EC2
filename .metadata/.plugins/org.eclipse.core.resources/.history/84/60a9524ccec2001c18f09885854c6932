@@ -1,0 +1,5 @@
+package com.jleon.bodega.controller;
+
+public class UsuarioController {
+
+}
